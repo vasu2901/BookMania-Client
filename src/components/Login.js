@@ -55,16 +55,14 @@ const Login = () => {
                     <div className='col md-2'>
                         <img id="loginpht1" className='mx-auto' src={image} alt="Girl in a jacket" style={{ opacity: "85%" }} />
                     </div>
-                    <div className='col' id='lgdv1'><p className='text-center' style={{ color: "black", fontSize: "35px" }}><strong>Login for Students</strong></p>
+                    <div className='col' id='lgdv1'><p className='text-center' style={{ color: "Gold", fontSize: "35px" }}><strong>Login </strong></p>
                         <div>
                             <br />
                             <form className='loginform1'>
-                                <label htmlFor="Username" style={{ color: "white" }}><strong>Email : </strong></label><input type="text" id="email" value={login.email} name="email" onChange={onChange} />
+                                <label htmlFor="Username" style={{fontSize: "25px", color: "red", marginLeft: "-2%"}}><strong>Email : </strong></label><input type="text" id="email" value={login.email} name="email" onChange={onChange} />
                                 <hr />
-                                <label htmlFor="Password" style={{ color: "white" }}>Password : </label><input type="password" id="password" value={login.password} name="password" onChange={onChange} />
-                                <hr />
-                                <p style={{ color: "white" }}>Not Registered?<Link to="/signin" style={{ paddingLeft: "2px", textDecoration: "none", fontSize: "35px", marginLeft: "25%", color: "black" }}><strong>SignIn</strong></Link></p>
-                                <p style={{ color: "white" }}><Link to="/forgotpassword" style={{ paddingLeft: "2px", textDecoration: "none", fontSize: "16px" }}>Forgot Password</Link></p>
+                                <label htmlFor="Password" style={{fontSize: "25px", color: "red", marginLeft: "-2%"}}>Password : </label><input type="password" id="password" value={login.password} name="password" onChange={onChange} />
+                                <p style={{fontSize: "25px", color: "black" }}>Not Registered?<Link to="/signin" style={{ paddingLeft: "2px", textDecoration: "none", fontSize: "35px", marginLeft: "25%", color: "blue" }}><strong>SignIn</strong></Link></p>
                                 <button type="button" id="Login" className="btn btn-outline-primary" style={{ marginLeft: "35%" }} onClick={user}>Log In</button>
                             </form>
                         </div>
