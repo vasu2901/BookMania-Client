@@ -6,7 +6,7 @@ const Deactivate = () => {
     let history = useNavigate();
     const user = async (e) => {
         e.preventDefault();
-        const response = await fetch("http://127.0.0.1:3000/api/deactivate", {
+        const response = await fetch("https://bookmania-server.onrender.com/api/deactivate", {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
