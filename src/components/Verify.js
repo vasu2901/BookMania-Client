@@ -8,7 +8,7 @@ const Verify = () => {
   const verify = async (e) => {
     e.preventDefault()
     if (note.email.includes('')) {
-      const response = await fetch("https://balkanid-server-snw1.onrender.com/api/verify", {
+      const response = await fetch("https://bookmania-server.onrender.com/api/verify", {
         method: 'POST',
         headers: {
           'Content-type': 'application/json',
