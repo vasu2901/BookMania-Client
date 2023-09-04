@@ -6,7 +6,7 @@ const Login = () => {
     let history = useNavigate();
     const user = async (e) => {
         e.preventDefault();
-        const response = await fetch("https://balkanid-server-snw1.onrender.com/api/login", {
+        const response = await fetch("http://127.0.0.1:3000/api/login", {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
