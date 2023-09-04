@@ -7,7 +7,7 @@ export const Reverify = () => {
     const history = useNavigate()
     const verify = async (e) => {
         e.preventDefault()
-        const response = await fetch("http://localhost:3000/api/reverify", {
+        const response = await fetch("https://balkanid-server-snw1.onrender.com/api/reverify", {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
