@@ -1,7 +1,7 @@
 import NoteContext from "./NoteContext";
 import React, { useState } from "react";
 const NoteState = (props) => {
-    const host = "http://localhost:3000";
+    const host = "https://balkanid-server-snw1.onrender.com";
     const books = []
     const receipts = []
     const [book, setbook] = useState(books);
