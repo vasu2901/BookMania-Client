@@ -7,7 +7,7 @@ const Signup = () => {
   let history = useNavigate();
   const check = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:3000/api/register", {
+    const response = await fetch("https://bookmania-server.onrender.com/api/register", {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
